@@ -13,9 +13,9 @@ var rLine = readLine.createInterface({
   output: process.stdout
 });
 
-rLine.question("Please enter the first roman number", function(firstNumber) {
-  rLine.question("Please enter the second roman number", function(secondNumber) {
-	  rLine.question("Please specify the operator among (+, -, *, /)", function(operator) {
+rLine.question("Please enter the first roman number: ", function(firstNumber) {
+  rLine.question("Please enter the second roman number: ", function(secondNumber) {
+	  rLine.question("Please specify the operator among (+, -, *, /): ", function(operator) {
 
 	  	//Checks if the operator entered by the user is allowed
 			if (_.indexOf(OPERATORS, operator) !== -1) {
